@@ -1,0 +1,55 @@
+html, body { margin: 0; padding: 0; height: 100vh; width: 100vw; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 100; padding-top: 30px; text-align: center; }
+h1 { color: #aaa; display: inline-block; font-size: 48px; font-weight: 100;  margin: 0; position: relative; }
+h1 sup { color: #7c4c0f; font-size: 50%; font-weight: 300; position: absolute; bottom: 80%; left: 100%; margin-left: .25em; margin-bottom: -.75em; }
+a { color: #7c4c0f; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.delay { animation-delay: 300ms; -moz-animation-delay: 300ms; -o-animation-delay: 300ms; -webkit-animation-delay: 300ms; }
+.delay1 { animation-delay: 1000ms; -moz-animation-delay: 1000ms; -o-animation-delay: 1000ms; -webkit-animation-delay: 1000ms; }
+.delay2 { animation-delay: 2000ms; -moz-animation-delay: 2000ms; -o-animation-delay: 2000ms; -webkit-animation-delay: 2000ms; }
+.delay3 { animation-delay: 2000ms; -moz-animation-delay: 3000ms; -o-animation-delay: 3000ms; -webkit-animation-delay: 3000ms; }
+.delay4 { animation-delay: 3000ms; -moz-animation-delay: 4000ms; -o-animation-delay: 4000ms; -webkit-animation-delay: 4000ms; }
+.logo { background: url("/img/cocoadialog-128.png") transparent no-repeat 0 0; background-size: contain; margin: 0 auto; height: 128px; width: 128px; }
+.lead { color: #aaa; font-size: 28px; font-weight: 100; margin: 20px 0; }
+.button-group { display: inline-block; margin: 0; padding: 0; }
+.button-group li { display: block; margin: 10px 0; padding: 0; }
+.button-group li:last-child { border-right: 0; margin-right: 0; padding-right: 0;}
+.button { background: #fff; border: 1px solid #7c4c0f; color: #7c4c0f; display: inline-block; min-width: 100px; padding: 15px 30px; text-decoration: none; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; -moz-transition: all 300ms ease-in-out; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
+.button:hover { background: #7c4c0f; color: #fff; text-decoration: none; }
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+  only screen and (min--moz-device-pixel-ratio:2),
+  only screen and (-o-min-device-pixel-ratio:2/1),
+  only screen and (min-device-pixel-ratio:2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .logo { background-image: url("./img/cocoadialog-256.png"); }
+}
+@media (min-width: 768px) {
+  body { align-items: center; display: flex; flex-direction: column; justify-content: center; padding-top: 0; }
+  h1 { font-size: 64px; }
+  .logo { background-image: url("./img/cocoadialog-256.png"); height: 256px; width: 256px; }
+  .lead { color: #ccc; font-size: 32px; }
+  .button-group { margin: 50px 0; }
+  .button-group li { border-right: 1px solid #ddd; display: inline-block; float: left; margin: 0; margin-right: 30px; padding-right: 30px; }
+}
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio:2),
+  only screen and (min-width: 768px) and (min--moz-device-pixel-ratio:2),
+  only screen and (min-width: 768px) and (-o-min-device-pixel-ratio:2/1),
+  only screen and (min-width: 768px) and (min-device-pixel-ratio:2),
+  only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .logo { background-image: url("./img/cocoadialog-512.png"); }
+}
+@media (min-width: 1024px) {
+  h1 { font-size: 128px; }
+  .lead { font-size: 64px; }
+  .logo { background-image: url("./img/cocoadialog-512.png"); height: 512px; width: 512px; }
+}
+@media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio:2),
+  only screen and (min-width: 1024px) and (min--moz-device-pixel-ratio:2),
+  only screen and (min-width: 1024px) and (-o-min-device-pixel-ratio:2/1),
+  only screen and (min-width: 1024px) and (min-device-pixel-ratio:2),
+  only screen and (min-width: 1024px) and (min-resolution: 192dpi),
+  only screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .logo { background-image: url("./img/cocoadialog-1024.png"); }
+}

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+COCOA_DIALOG=""
+
+if [ -d "/Applications/cocoadialog.app" ]; then
+    COCOA_DIALOG="/Applications/cocoadialog.app/Contents/MacOS/cocoadialog"
+elif [ -d "$HOME/Applications/cocoadialog.app" ]; then
+    COCOA_DIALOG="$HOME/Applications/cocoadialog.app/Contents/MacOS/cocoadialog"
+else
+    echo "cocoadialog.app not found"
+    exit 1
+fi
