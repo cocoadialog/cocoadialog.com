@@ -9,8 +9,9 @@ a:hover { text-decoration: underline; }
 .delay2 { animation-delay: 2000ms; -moz-animation-delay: 2000ms; -o-animation-delay: 2000ms; -webkit-animation-delay: 2000ms; }
 .delay3 { animation-delay: 2000ms; -moz-animation-delay: 3000ms; -o-animation-delay: 3000ms; -webkit-animation-delay: 3000ms; }
 .delay4 { animation-delay: 3000ms; -moz-animation-delay: 4000ms; -o-animation-delay: 4000ms; -webkit-animation-delay: 4000ms; }
-.logo { background: url("/img/cocoadialog-128.png") transparent no-repeat 0 0; background-size: contain; margin: 0 auto; height: 128px; width: 128px; }
-.lead { color: #aaa; font-size: 28px; font-weight: 100; margin: 20px 0; }
+.logo { background: url("/img/cocoadialog-128.png") transparent no-repeat center center; background-size: contain; margin: 0 auto; height: 128px; width: 128px; }
+.lead { color: #aaa; font-size: 28px; font-weight: 100; margin: 20px 15px; }
+.lead small { color: #aaa; display: inline-block; font-size: 12px; font-style: italic; margin-top: 15px; max-width: 500px; }
 .button-group { display: inline-block; margin: 0; padding: 0; }
 .button-group li { display: block; margin: 10px 0; padding: 0; }
 .button-group li:last-child { border-right: 0; margin-right: 0; padding-right: 0;}
